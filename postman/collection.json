@@ -30,7 +30,7 @@
               }
             ],
             "url": {
-              "raw": "{{base_url}}/auth/signup",
+              "raw": "{{base_url}}/api/v1/auth/signup",
               "host": [
                 "{{base_url}}"
               ],
@@ -71,7 +71,7 @@
               }
             ],
             "url": {
-              "raw": "{{base_url}}/auth/signin",
+              "raw": "{{base_url}}/api/v1/auth/signin",
               "host": [
                 "{{base_url}}"
               ],
@@ -116,7 +116,7 @@
               }
             ],
             "url": {
-              "raw": "{{base_url}}/auth/signout",
+              "raw": "{{base_url}}/api/v1/auth/signout",
               "host": [
                 "{{base_url}}"
               ],
@@ -156,7 +156,7 @@
               }
             ],
             "url": {
-              "raw": "{{base_url}}/weather?lat=24.71&lon=46.68",
+              "raw": "{{base_url}}/api/v1/weather?lat=24.71&lon=46.68",
               "host": [
                 "{{base_url}}"
               ],
@@ -208,7 +208,7 @@
               }
             ],
             "url": {
-              "raw": "{{base_url}}/history?limit=10&skip=0&sort=-requestedAt",
+              "raw": "{{base_url}}/api/v1/history?limit=10&skip=0&sort=-requestedAt",
               "host": [
                 "{{base_url}}"
               ],
