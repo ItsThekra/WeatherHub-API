@@ -79,4 +79,3 @@ const getHistory = (req, res, next) => __awaiter(void 0, void 0, void 0, functio
     }
 });
 exports.getHistory = getHistory;
-//# sourceMappingURL=history.controller.js.map

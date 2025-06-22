@@ -59,4 +59,3 @@ const HistorySchema = new mongoose_1.default.Schema({
 HistorySchema.index({ user: 1, requestedAt: -1 });
 const History = mongoose_1.default.model('History', HistorySchema);
 exports.default = History;
-//# sourceMappingURL=history.model.js.map

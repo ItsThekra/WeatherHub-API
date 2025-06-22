@@ -7,4 +7,3 @@ const auth_middleware_1 = require("../middleware/auth.middleware");
 const router = (0, express_1.Router)();
 router.get('/', auth_middleware_1.protect, history_controller_1.getHistory);
 exports.default = router;
-//# sourceMappingURL=history.routes.js.map

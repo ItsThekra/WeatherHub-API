@@ -50,4 +50,3 @@ const WeatherSchema = new mongoose_1.default.Schema({
 WeatherSchema.index({ lat: 1, lon: 1 }, { unique: true });
 const Weather = mongoose_1.default.model('Weather', WeatherSchema);
 exports.default = Weather;
-//# sourceMappingURL=weather.model.js.map

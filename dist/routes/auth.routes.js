@@ -9,4 +9,3 @@ router.post('/signup', auth_controller_1.signup);
 router.post('/signin', auth_controller_1.signin);
 router.post('/signout', auth_middleware_1.protect, auth_controller_1.signout);
 exports.default = router;
-//# sourceMappingURL=auth.routes.js.map

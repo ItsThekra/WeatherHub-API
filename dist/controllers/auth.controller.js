@@ -95,4 +95,3 @@ const signout = (req, res) => {
     });
 };
 exports.signout = signout;
-//# sourceMappingURL=auth.controller.js.map

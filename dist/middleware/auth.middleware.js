@@ -44,4 +44,3 @@ const protect = (req, res, next) => __awaiter(void 0, void 0, void 0, function* 
     }
 });
 exports.protect = protect;
-//# sourceMappingURL=auth.middleware.js.map
