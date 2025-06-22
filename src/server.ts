@@ -1,5 +1,5 @@
 // src/server.ts
-import express from 'express';
+import express, {  Request, Response } from "express"
 import dotenv from 'dotenv';
 import rateLimit from 'express-rate-limit';
 import connectDB from './config/db';
@@ -42,6 +42,12 @@ app.use('/api/v1/auth', authRoutes);
 app.use('/api/v1/weather', weatherRoutes);
 app.use('/api/v1/history', historyRoutes);
 
+app.get("/", (req: Request, res: Response) => {
+  res.status(200).json({
+    success: true,
+    data: { message: "WeatherHub API - Welcome!" },
+  })
+})
 const PORT = process.env.PORT ? parseInt(process.env.PORT, 10) : 3000;
 
 app.listen(PORT, () => console.log(`Server running on port ${PORT}`));
