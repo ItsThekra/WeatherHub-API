@@ -3,7 +3,6 @@ import express from 'express';
 import dotenv from 'dotenv';
 import rateLimit from 'express-rate-limit';
 import connectDB from './config/db';
-import errorHandler from './middleware/error.handler';
 import cors from 'cors';
 
 // Load env vars
@@ -43,15 +42,13 @@ app.use('/api/v1/auth', authRoutes);
 app.use('/api/v1/weather', weatherRoutes);
 app.use('/api/v1/history', historyRoutes);
 
-app.use(errorHandler);
-
 const PORT = process.env.PORT ? parseInt(process.env.PORT, 10) : 3000;
 
 app.listen(PORT, () => console.log(`Server running on port ${PORT}`));
 
 process.on('unhandledRejection', (err: unknown) => {
   if (err && typeof err === 'object' && 'message' in err) {
-    // @ts-ignore
+  
     console.log(`Error: ${err.message}`);
   } else {
     console.log('Unhandled rejection', err);

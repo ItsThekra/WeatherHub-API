@@ -6,6 +6,8 @@
     "outDir": "./dist",
     "strict": true,
     "esModuleInterop": true,
+    "sourceMap": true,             
+    "baseUrl": "./src",
     "skipLibCheck": true
   },
   "include": [
